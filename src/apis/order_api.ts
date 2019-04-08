@@ -461,6 +461,7 @@ export class OrderAPI {
             await this.assertFillableBy(debtOrderData, prospectiveCreditor, txOptions);
             return true;
         } catch (e) {
+            console.log(e);
             return false;
         }
     }

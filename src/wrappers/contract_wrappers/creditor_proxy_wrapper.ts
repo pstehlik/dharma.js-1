@@ -1,4 +1,4 @@
-import { CreditorProxy as ContractArtifacts } from "@dharmaprotocol/contracts";
+import { CreditorProxy as ContractArtifacts } from "@pstehlik/dharma-contracts";
 import * as promisify from "tiny-promisify";
 import * as Web3 from "web3";
 import { BigNumber } from "../../../utils/bignumber";

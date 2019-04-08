@@ -1,5 +1,5 @@
 // tslint:disable-next-line:no-unused-variable
-import { TokenRegistry as ContractArtifacts } from "@dharmaprotocol/contracts";
+import { TokenRegistry as ContractArtifacts } from "@pstehlik/dharma-contracts";
 import * as promisify from "tiny-promisify";
 import * as Web3 from "web3";
 import { BigNumber } from "../../../utils/bignumber";

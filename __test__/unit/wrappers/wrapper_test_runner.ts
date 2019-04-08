@@ -25,11 +25,11 @@ export interface WrapperTestObject {
     name: string;
     // E.g. ERC 721 Token Registry Contract
     displayName: string;
-    // e.g. node_modules/@dharmaprotocol/contracts/artifacts/json/ERC721TokenRegistry.json
+    // e.g. node_modules/@pstehlik/dharma-contracts/artifacts/json/ERC721TokenRegistry.json
     artifactPath: string;
     // E.g. ERC721TokenRegistryContract
     contract: any;
-    // E.g. import { ERC721TokenRegistry } from "@dharmaprotocol/contracts";
+    // E.g. import { ERC721TokenRegistry } from "@pstehlik/dharma-contracts";
     artifact: any;
 }
 

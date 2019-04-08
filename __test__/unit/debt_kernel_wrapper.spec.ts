@@ -1,7 +1,7 @@
-jest.mock("@dharmaprotocol/contracts");
+jest.mock("@pstehlik/dharma-contracts");
 
 // External Libraries
-import { DebtKernel as ContractArtifactsMock } from "@dharmaprotocol/contracts";
+import { DebtKernel as ContractArtifactsMock } from "@pstehlik/dharma-contracts";
 import * as promisify from "tiny-promisify";
 import * as Web3 from "web3";
 
@@ -23,7 +23,7 @@ const web3 = new Web3(provider);
 const web3Utils = new Web3Utils(web3);
 
 const DEBT_KERNEL_RAW_ARTIFACTS_PATH =
-    "node_modules/@dharmaprotocol/contracts/artifacts/json/DebtKernel.json";
+    "node_modules/@pstehlik/dharma-contracts/artifacts/json/DebtKernel.json";
 
 const TX_DEFAULTS = { from: ACCOUNTS[0].address, gas: 4712388 };
 

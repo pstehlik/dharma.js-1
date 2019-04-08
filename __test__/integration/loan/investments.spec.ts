@@ -2,7 +2,7 @@ import { ACCOUNTS } from "../../accounts";
 
 import { Dharma, Web3 } from "../../../src";
 
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 import { Investments, LoanRequest } from "../../../src/loan/";
 

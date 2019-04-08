@@ -9,7 +9,7 @@ import {
     ERC721Token,
     ERC721TokenRegistry,
     MintableERC721Token,
-} from "@dharmaprotocol/contracts";
+} from "@pstehlik/dharma-contracts";
 
 // Wrappers
 import {
@@ -37,7 +37,7 @@ const wrappers: WrapperTestObject[] = [
         name: "ERC721TokenRegistry",
         displayName: "ERC 721 Token Registry Contract",
         artifactPath:
-            "node_modules/@dharmaprotocol/contracts/artifacts/json/ERC721TokenRegistry.json",
+            "node_modules/@pstehlik/dharma-contracts/artifacts/json/ERC721TokenRegistry.json",
         contract: ERC721TokenRegistryContract,
         artifact: ERC721TokenRegistry,
     },
@@ -45,7 +45,7 @@ const wrappers: WrapperTestObject[] = [
         name: "ERC721Collateralizer",
         displayName: "ERC 721 Collateralizer Contract",
         artifactPath:
-            "node_modules/@dharmaprotocol/contracts/artifacts/json/ERC721Collateralizer.json",
+            "node_modules/@pstehlik/dharma-contracts/artifacts/json/ERC721Collateralizer.json",
         contract: ERC721CollateralizerContract,
         artifact: ERC721Collateralizer,
     },
@@ -53,14 +53,14 @@ const wrappers: WrapperTestObject[] = [
         name: "ERC721CollateralizedSimpleInterestTermsContract",
         displayName: "ERC 721 Collateralized Simple Interest Terms Contract",
         artifactPath:
-            "node_modules/@dharmaprotocol/contracts/artifacts/json/ERC721CollateralizedSimpleInterestTermsContract.json",
+            "node_modules/@pstehlik/dharma-contracts/artifacts/json/ERC721CollateralizedSimpleInterestTermsContract.json",
         contract: ERC721CollateralizedSimpleInterestTermsContractContract,
         artifact: ERC721CollateralizedSimpleInterestTermsContract,
     },
     {
         name: "ERC721Token",
         displayName: "ERC 721 Token",
-        artifactPath: "node_modules/@dharmaprotocol/contracts/artifacts/json/ERC721Token.json",
+        artifactPath: "node_modules/@pstehlik/dharma-contracts/artifacts/json/ERC721Token.json",
         contract: ERC721TokenContract,
         artifact: ERC721Token,
     },
@@ -68,14 +68,14 @@ const wrappers: WrapperTestObject[] = [
         name: "MintableERC721Token",
         displayName: "Mintable ERC 721 Token",
         artifactPath:
-            "node_modules/@dharmaprotocol/contracts/artifacts/json/MintableERC721Token.json",
+            "node_modules/@pstehlik/dharma-contracts/artifacts/json/MintableERC721Token.json",
         contract: MintableERC721TokenContract,
         artifact: MintableERC721Token,
     },
     {
         name: "CreditorProxy",
         displayName: "Creditor Proxy",
-        artifactPath: "node_modules/@dharmaprotocol/contracts/artifacts/json/CreditorProxy.json",
+        artifactPath: "node_modules/@pstehlik/dharma-contracts/artifacts/json/CreditorProxy.json",
         contract: CreditorProxyContract,
         artifact: CreditorProxy,
     },

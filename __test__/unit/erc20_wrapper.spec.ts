@@ -1,4 +1,4 @@
-jest.mock("@dharmaprotocol/contracts");
+jest.mock("@pstehlik/dharma-contracts");
 
 import * as promisify from "tiny-promisify";
 import { Web3Utils } from "utils/web3_utils";
@@ -6,7 +6,7 @@ import { ERC20Contract, TokenRegistryContract } from "src/wrappers";
 import {
     ERC20 as ERC20TokenMockArtifacts,
     TokenRegistry as TokenRegistryMockArtifacts,
-} from "@dharmaprotocol/contracts";
+} from "@pstehlik/dharma-contracts";
 import { CONTRACT_WRAPPER_ERRORS } from "src/wrappers/contract_wrappers/base_contract_wrapper";
 import { ACCOUNTS } from "../accounts";
 import * as Web3 from "web3";
@@ -20,8 +20,8 @@ const web3 = new Web3(provider);
 const web3Utils = new Web3Utils(web3);
 
 const TOKEN_REGISTRY_ARTIFACTS_PATH =
-    "node_modules/@dharmaprotocol/contracts/artifacts/json/TokenRegistry.json";
-const ERC20_ARTIFACTS_PATH = "node_modules/@dharmaprotocol/contracts/artifacts/json/ERC20.json";
+    "node_modules/@pstehlik/dharma-contracts/artifacts/json/TokenRegistry.json";
+const ERC20_ARTIFACTS_PATH = "node_modules/@pstehlik/dharma-contracts/artifacts/json/ERC20.json";
 
 const TX_DEFAULTS = { from: ACCOUNTS[0].address, gas: 4712388 };
 
@@ -35,7 +35,7 @@ describe("ERC20 Token Contract Wrapper (Unit)", () => {
 
         const readFilePromise = promisify(fs.readFile);
 
-        // When we mock @dharmaprotocol/contracts, *all* contracts become by
+        // When we mock @pstehlik/dharma-contracts, *all* contracts become by
         // default mocked.  Thus, if we depend on accessing any contract at
         // any point in time during this test, it needs to be mocked in some capacity.
         //

@@ -1,6 +1,6 @@
 // We must explicitly unmock the dharma protocol contract artifacts
 // in instances where we need our deployed artifacts in our test environment.
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 // External Libraries
 import * as ABIDecoder from "abi-decoder";
@@ -13,7 +13,7 @@ import { ErrorScenarioRunner } from "./runners/error_scenario_runner";
 import { GetScenarioRunner } from "./runners/get_runner";
 
 // For adding ABIs to the decoder.
-import { DebtKernel, RepaymentRouter } from "@dharmaprotocol/contracts";
+import { DebtKernel, RepaymentRouter } from "@pstehlik/dharma-contracts";
 
 import {
     INVALID_ORDERS,

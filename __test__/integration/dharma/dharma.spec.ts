@@ -1,4 +1,4 @@
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 // For testing regular web3 instantiation.
 import { Dharma, Web3 } from "../../../src";

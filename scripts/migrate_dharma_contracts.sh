@@ -8,7 +8,7 @@ mkdir -p logs
 DHARMA_JS_REPO=`pwd`
 LOGS=$DHARMA_JS_REPO/logs/dharma_contract_migration.txt
 
-DHARMA_SMART_CONTRACTS=$DHARMA_JS_REPO/node_modules/@dharmaprotocol/contracts
+DHARMA_SMART_CONTRACTS=$DHARMA_JS_REPO/node_modules/@pstehlik/dharma-contracts
 
 cd $DHARMA_SMART_CONTRACTS
 
@@ -28,4 +28,4 @@ echo -e "\n"
 
 echo -e "${GREEN}Dependency contract migrations complete, test chain is ready for use!${NO_COLOR}"
 echo -e "${GREEN}Artifacts for the contracts deployed to the test chain can be imported directly from the \
-@dharmaprotocol/contracts package.${NO_COLOR}"
+@pstehlik/dharma-contracts package.${NO_COLOR}"

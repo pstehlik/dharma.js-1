@@ -1,7 +1,7 @@
 // Internal dependencies
 import { Dharma, Web3 } from "../../../src";
 
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 import { IS_EXPIRED_SCENARIOS } from "./scenarios/is_expired_scenarios";
 import { UNDERWRITTEN_LOAN_REQUEST } from "./scenarios/underwritten_loan_request";

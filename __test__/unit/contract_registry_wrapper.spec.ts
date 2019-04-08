@@ -1,7 +1,7 @@
-jest.mock("@dharmaprotocol/contracts");
+jest.mock("@pstehlik/dharma-contracts");
 
 // External Libraries
-import { ContractRegistry as ContractArtifactsMock } from "@dharmaprotocol/contracts";
+import { ContractRegistry as ContractArtifactsMock } from "@pstehlik/dharma-contracts";
 import * as promisify from "tiny-promisify";
 import * as Web3 from "web3";
 
@@ -23,7 +23,7 @@ const web3 = new Web3(provider);
 const web3Utils = new Web3Utils(web3);
 
 const CONTRACT_REGISTRY_RAW_ARTIFACTS_PATH =
-    "node_modules/@dharmaprotocol/contracts/artifacts/json/ContractRegistry.json";
+    "node_modules/@pstehlik/dharma-contracts/artifacts/json/ContractRegistry.json";
 
 const TX_DEFAULTS = { from: ACCOUNTS[0].address, gas: 4712388 };
 

@@ -2,7 +2,7 @@
 // in instances where we need our deployed artifacts in our test environment.
 import { EthereumAddress } from "../../../src/types";
 
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 // libraries
 import * as Web3 from "web3";

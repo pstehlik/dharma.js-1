@@ -1,4 +1,4 @@
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 // Internal dependencies
 import { Dharma, Web3 } from "../../../src";

@@ -42,7 +42,7 @@ const TX_DEFAULTS = { from: ACCOUNTS[0].address, gas: 4712388 };
 // Given that we rely on having access to the deployed Dharma smart contracts,
 // we unmock the Dharma smart contracts artifacts package to pull the most recently
 // deployed contracts on the current network.
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 // Unmock the "fs-extra" package in order to give us
 // access to the deployed TokenRegistry on the

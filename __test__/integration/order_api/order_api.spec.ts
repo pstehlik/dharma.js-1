@@ -48,7 +48,7 @@ import { READY_TO_FILL_SCENARIOS } from "./scenarios/ready_to_fill_scenarios";
 // Given that this is an integration test, we unmock the Dharma
 // smart contracts artifacts package to pull the most recently
 // deployed contracts on the current network.
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 const provider = new Web3.providers.HttpProvider("http://localhost:8545");
 const web3 = new Web3(provider);

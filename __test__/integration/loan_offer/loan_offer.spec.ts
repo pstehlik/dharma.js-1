@@ -1,6 +1,6 @@
 import { Dharma, Web3 } from "../../../src";
 
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 import { VALID_DEBT_ORDER_PARAMS } from "./scenarios/valid_debt_order_params";
 

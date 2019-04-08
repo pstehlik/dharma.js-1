@@ -5,7 +5,7 @@ import { BigNumber } from "../../../utils/bignumber";
 import { TxData } from "../../types";
 
 import { BaseContract, CONTRACT_WRAPPER_ERRORS } from "./base_contract_wrapper";
-import { ERC721CollateralizedSimpleInterestTermsContract as ContractArtifacts } from "@dharmaprotocol/contracts";
+import { ERC721CollateralizedSimpleInterestTermsContract as ContractArtifacts } from "@pstehlik/dharma-contracts";
 import { Web3Utils } from "../../../utils/web3_utils";
 import { CollateralizedSimpleInterestTermsContractContract } from "./collateralized_simple_interest_terms_contract_wrapper";
 import { classUtils } from "../../../utils/class_utils";

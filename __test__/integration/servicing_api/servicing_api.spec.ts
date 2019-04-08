@@ -1,6 +1,6 @@
 // We must explicitly unmock the dharma protocol contract artifacts
 // in instances where we need our deployed artifacts in our test environment.
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 import { GET_REPAYMENT_SCHEDULE } from "./scenarios/get_repayment_schedule";
 

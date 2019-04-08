@@ -662,9 +662,18 @@ export class ERC721CollateralizedSimpleInterestLoanAdapter implements Adapter {
             erc721Symbol,
         );
 
+        let _tokenId = tokenReference;
+        if(order.isEnumerable){
+          _tokenId = await erc721Token.tokenByIndex.callAsync(tokenReference);
+        }
+        console.log("Going to test with token ID: "+ _tokenId.toString(10));
+      
+        
         // Assert that the ERC721 Collateralizer has approval for transferring the asset.
-        const approved = await erc721Token.getApproved.callAsync(tokenReference);
+        const approved = await erc721Token.getApproved.callAsync(_tokenId);
         const collateralizerContract = await this.contractsAPI.loadERC721CollateralizerAsync();
+
+        console.log("got approved for: "+ approved + ". And collateralizer is: "+collateralizerContract.address);
 
         if (approved !== collateralizerContract.address) {
             throw new Error(

@@ -1,4 +1,4 @@
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 import { Web3 } from "../../../src";
 import { Token } from "../../../src/types";

@@ -23,7 +23,7 @@ const web3 = new Web3(provider);
 // Given that this is an integration test, we unmock the Dharma
 // smart contracts artifacts package to pull the most recently
 // deployed contracts on the current network.
-jest.unmock("@dharmaprotocol/contracts");
+jest.unmock("@pstehlik/dharma-contracts");
 
 describe("ERC721 Collateralized Simple Interest Loan Adapter (Integration Tests)", () => {
     const contractsApi = new ContractsAPI(web3);
